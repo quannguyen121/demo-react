@@ -28,6 +28,46 @@
   color: #61dafb;
 }
 
+header {
+  background-color: #4aeed0;
+  color: #000000;
+  padding: 20px;
+  text-align: center;
+}
+nav ul {
+  list-style-type: none;
+  padding: 0;
+}
+nav ul li {
+  display: inline;
+  margin-right: 20px;
+}
+main {
+  padding: 20px;
+}
+h3 {
+padding: 200px;
+  text-align: center;
+  color:red;
+}
+h1 {
+  padding:50px;
+}
+footer {
+  background-color: #9fb5f7;
+  color: #ffffff;
+  padding: 10px;
+  text-align: center;
+  position: fixed;
+  bottom: 0;
+  width: 100%;
+}
+img {
+  display: block;
+  margin: auto;
+  max-width: 100%;
+  height: auto;
+}
 @keyframes App-logo-spin {
   from {
     transform: rotate(0deg);
