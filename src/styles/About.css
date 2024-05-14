@@ -19,19 +19,44 @@
   flex-direction: column;
   height: 55%;
   align-items: center;
-  margin-top: 50px;
+  margin-top: 20px; /* Điều chỉnh margin để phù hợp hơn với các thiết bị nhỏ */
+  padding: 0 10px; /* Thêm padding để tạo khoảng cách giữa nội dung và cạnh màn hình trên các thiết bị nhỏ */
 }
 
 .aboutBottom p {
-  width: 1200px;
+  width: 90%; /* Giảm chiều rộng để phù hợp với các thiết bị nhỏ */
+  max-width: 1200px; /* Giữ nguyên giới hạn chiều rộng tối đa cho các thiết bị lớn */
 }
 
-.about .aboutBottom h1 {
-  font-weight: 1;
-  font-size: 0px;
+.aboutBottom h1 {
+  font-weight: bold;
+  font-size: 24px; /* Đặt kích thước font hợp lý */
   color: black;
-  height: 0px;
   display: flex;
   justify-content: center;
-  transform: translateY(0px);
+  margin-bottom: 20px; /* Thêm khoảng cách dưới cho tiêu đề */
+}
+
+/* Thiết lập responsive cho các thiết bị nhỏ hơn */
+@media (max-width: 768px) {
+  .about {
+    height: auto; /* Đặt chiều cao tự động cho các thiết bị nhỏ hơn */
+  }
+
+  .aboutTop {
+    height: 30vh; /* Giảm chiều cao cho phần top */
+  }
+
+  .aboutBottom {
+    margin-top: 10px;
+  }
+
+  .aboutBottom p {
+    width: 100%; /* Sử dụng toàn bộ chiều rộng có sẵn */
+    padding: 0 10px; /* Thêm padding để tạo khoảng cách với cạnh màn hình */
+  }
+
+  .aboutBottom h1 {
+    font-size: 18px; /* Giảm kích thước font cho thiết bị nhỏ */
+  }
 }
