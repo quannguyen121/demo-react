@@ -1,0 +1,114 @@
+/* Cart.css */
+
+.cart {
+    position: fixed;
+    top: 50px; /* Điều chỉnh vị trí theo cần thiết */
+    right: 20px; /* Điều chỉnh vị trí theo cần thiết */
+    background-color: white;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    padding: 10px;
+    width: 250px; /* Điều chỉnh kích thước theo cần thiết */
+    z-index: 1000; /* Đảm bảo hiển thị phía trên các thành phần khác */
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Đổ bóng */
+  }
+  
+  .cart__title {
+    font-size: 18px;
+    font-weight: bold;
+    margin-bottom: 10px;
+  }
+  
+  .cart__items {
+    max-height: 300px; /* Điều chỉnh kích thước theo cần thiết */
+    overflow-y: auto; /* Cho phép cuộn nếu nội dung quá dài */
+  }
+  
+  .cart__item {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 10px;
+  }
+  
+  .cart__item img {
+    width: 50px; /* Điều chỉnh kích thước hình ảnh theo cần thiết */
+    height: 50px;
+    object-fit: cover; /* Đảm bảo hình ảnh không bị méo */
+    border-radius: 5px;
+  }
+  
+  .cart__item-info {
+    flex-grow: 1;
+    margin-left: 10px;
+  }
+  
+  .cart__item-name {
+    font-weight: bold;
+  }
+  
+  .cart__item-price {
+    color: #888;
+  }
+  
+  .cart__total {
+    margin-top: 10px;
+    font-size: 16px;
+    font-weight: bold;
+  }
+  
+  .cart__checkout {
+    width: 100%;
+    margin-top: 10px;
+    padding: 8px 0;
+    background-color: #007bff;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+  }
+  
+  .cart__checkout:hover {
+    background-color: #0056b3;
+  }
+  
+  .cart__empty {
+    text-align: center;
+    color: #888;
+  }
+  .cart-item img {
+    width: 100px;
+    height: 100px;
+    object-fit: cover;
+  }
+  .cart__items {
+    max-height: 400px; /* Adjust this value to your desired height */
+    overflow-y: auto;
+  }
+  .cart__items-scroll {
+    max-height: 300px;
+    overflow-y: auto;
+  }
+  
+  .cart__buttons {
+    display: flex;
+    justify-content: space-between;
+    margin-top: 10px;
+  }
+  
+  .cart__checkout,
+  .cart__order {
+    background-color: #ff9900;
+    color: white;
+    padding: 10px 20px;
+    border: none;
+    cursor: pointer;
+    font-size: 16px;
+    border-radius: 5px;
+  }
+  
+  .cart__checkout:hover,
+  .cart__order:hover {
+    background-color: #e68a00;
+  }
+  

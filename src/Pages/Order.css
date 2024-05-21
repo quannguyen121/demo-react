@@ -1,0 +1,26 @@
+
+.product-card {
+    border: 1px solid black;
+    padding: 10px;
+    margin: 10px;
+    width: 200px;
+    display: inline-block;
+  }
+  
+  
+  .products-container {
+    text-align: center;
+  }
+  .cart-container {
+    border: 1px solid black;
+    padding: 10px;
+    margin: 10px;
+    width: 300px;
+    display: inline-block; /* Thêm */
+    vertical-align: middle; /* Thêm */
+}
+.menu-item img {
+  width: 200px;
+  height: 200px;
+  object-fit: cover;
+}
